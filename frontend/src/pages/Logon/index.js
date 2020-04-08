@@ -22,7 +22,7 @@ export default function Logon(){
         console.log(response.data.name)
 
 
-        localStorage.setItem('ondId', id);
+        localStorage.setItem('ongId', id);
         localStorage.setItem('ongName', response.data.name);
         history.push('/profile');
         
