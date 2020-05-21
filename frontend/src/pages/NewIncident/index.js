@@ -1,11 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../../assets/logo.svg';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import './style.css';
 
+import api from '../../services/api';
+
+
+
 
 export default function NewIncident(){
+
+        const [title, setTitle] = useState([]);
+        const [description, setDescription] = useState([]);
+        const [value, setValue] = useState([]);
+
+        const history = useHistory();
+
+
 
      return(
         <div className="new-incident-container">
